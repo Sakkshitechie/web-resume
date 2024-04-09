@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web Resume</title>
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        </head>
+    <body>
+        <header class="header">
+            <nav>
+                <ul>
+                <a href="#"></a>
+                <li><a href="#abt" class="list" type="button">About</a></li>
+                <li><a href="#ctc" class="list" type="button">Contact</a></li>
+                <li><a href="#add" class="list" type="button">Address</a></li>
+                <li><a href="#skl" class="list" type="button">Skills</a></li>
+                <li><a href="#edu" class="list" type="button">Education</a></li>
+                <li><a href="#exp" class="list" type="button">Experience</a></li>
+                <li><a href="#prt" class="list" type="button">Project</a></li>
+                <li><a href="#etc" class="list" type="button">Extra Curricular</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <aside>
+            <div class="left-content">
+                <div class="image">
+                <img src="./image/Sakshi_image.jpeg" width="250cm" height="250cm" style="border-radius:50%">
+                </div>
+                <h1 style="text-align: center;">Sakshi Kumari</h1>
+                <p style="text-align: center;"><strong>I'm a developer</strong></p>
+                <br><br><br><br><hr><br>
+                <h3 id="add">Address</h3>
+                <p><strong>L.G.-01,Plot no.-34,Govind Sarovar, Hathoj, Kalwar road <br>Jaipur<br>302012</strong></p>
+                <br><hr><br>
+                <div class="contact" id="ctc"><h3>Contact</h3>
+                <span class="icon"><i class="fa fa-phone"><span class="text"> 7740854851</span></i></span>
+                <span class="icon"><i class="fa fa-envelope"><span class="text"> sakshikumari.raj.csrl@gmail.com</span></i></span>
+                <span class="icon"><i class="fa fa-envelope"><span class="text"> skumari5555555555@gmail.com</span></i></span>
+                <span class="icon"><i class="fa fa-linkedin"><span class="text"> 
+                    https://www.linkedin.com/in/sakshi-kumari-b6ba71214</span></i></span>
+                <span class="icon"><i class="fa fa-github"><span class="text"> https://github.com/Sakkshitechie</span></i></span>
+                </div>
+                <br><hr><br>
+                <div class="skills" id="skl">
+                    <div class="skill">
+                    <h3>Skills</h3>
+                    <ul style="float:left; text-align:left;">
+                        <li><span class="skill-name"> Core Java</span></li>
+                        <li><span class="skill-name">Springboot</span></li>
+                        <li><span class="skill-name">MySQL</span></li>
+                        <li><span class="skill-name">DSA</span></li>
+                    </ul>
+                    <ul style="float:left;  text-align:right;">
+                        <li><span class="skill-name">C/C++</span></li>
+                        <li><span class="skill-name">Latex</span></li>
+                        <li><span class="skill-name">HTML/CSS</span></li>
+                        <li><span class="skill-name">Javascript</span></li>
+                    </ul>
+                </div>
+                <br><br><br><br><br><br>
+                <canvas id="skillChart"></canvas>
+                </div>
+            </div>
+        </aside>
+            <div class="right-content">
+                <div class="about" id="abt">
+                <h2>About Me</h2>
+                <p>I am an enthusiastic and dedicated B.Tech student at Rajasthan Technical University (RTU), 
+                    currently in the third year of Information Technology. Accomplished a practical training in Java 
+                    Development with Spring Boot at Singhsoft Technology Pvt. Ltd. Consistently achieving academic excellence, 
+                    currently holding a CGPA of 9.3/10.0. Open for internships in the field of Information Technology. </p>
+                </div>
+                <div id="edu">
+                <h2>Education</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <span class="education-name">Lady Anusuya Singhania Educational Academy</span>
+                        <span class="education-year">[2018]</span>
+                        <p class="class-details">Class X<br>(Scored 93%)</p>
+                    </li>
+                    <li class="education-item">
+                        <span class="education-name">Jawahar Navodaya Vidyalaya Pachpahar, Jhalawar</span>
+                        <span class="education-year">[2020]</span>
+                        <p class="class-details">Class XII<br>(Scored 90.2%)</p>
+                    </li>
+                    <li class="education-item">
+                        <span class="education-name">Rajasthan Technical University Kota</span>
+                        <span class="education-year">[2021-2025]</span>
+                        <p class="class-details">B.Tech in Information Technology<br>(GPA:9.3/10.0)<br>Top 5 Ranking in Branch</p>
+                    </li>
+                </ul>
+                </div>
+                <div id="exp">
+                <h2>Experience</h2>
+                <ul class="experience-item">
+                    <li class="experience-list">
+                        <span class="experience-name">Completed practical training of 45 days in Java Development using Spring Boot 
+                            Application at Singhsoft Technology Pvt. Ltd. in Jaipur</span>
+                        <span class="experience-year">(Aug 2023)</span>
+                    </li>
+                    <li class="experience-list">
+                        <span class="experience-name">Participated in the Global Hackathon in Shankara Institute of Technology at 
+                            Jaipur</span>
+                        <span class="experience-year">(Apr 2022)</span>
+                    </li>
+                    <li class="experience-list">
+                        <span class="experience-name">Secured 86.18 percentile in JEE Mains examination among 1.2 million candidates 
+                            nationwide</span>
+                        <span class="experience-year">[2021]</span>
+                    </li>
+                    <li class="experience-list">
+                        <span class="experience-name">Secured 88 percentile and attained a General merit rank of 5440 in COMEDK</span>
+                        <span class="experience-year">[2021]</span>
+                    </li>
+                    <li class="experience-list">
+                        <span class="experience-name">Completed Diploma in Computer Application(DCA) with 92 percentage from Mother 
+                            Teresa Educational Trust at Feedback Chandi, Patna</span>
+                        <span class="experience-year">(Oct 2018)</span>
+                    </li> 
+                </ul>
+                </div>
+                <div id="prt">
+                <h2>Projects</h2>
+                <ul class="project-item">
+                    <li class="project-list">
+                        <span class="project-name">Cloud Vendor Management System</span>
+                        <span class="project-year">[2023]</span>
+                            <dt>Ongoing Project</dt>
+                            <dt>CRUD Operation Project on Spring Boot using Java</dt>
+                    </li>
+                    <li class="project-list">
+                        <span class="project-name">Student Grading System</span>
+                        <span class="project-year">[2023]</span>
+                            <dt>Created using Java</dt> 
+                            <dt>Used to calculate the average marks and grades of the particular student and of the whole class</dt>
+                    </li>
+                    <li class="project-list">
+                        <span class="project-name">Room allotment and Booking System</span>
+                        <span class="project-year">[2022]</span>
+                            <dt>Created a project using C++ and Data Structure during the 5 week internship at Internship Studio</dt>
+                            <dt>Devised with algorithm to count the vacant rooms for allotment</dt>                            
+                    </li>
+                    <li class="project-list">
+                        <span class="project-name">KBC(Kaun Banega Crorepati) game</span>
+                        <span class="project-year">[2020]</span>
+                            <dt>Created using C++</dt>
+                            <dt>Reinforced with game guidelines and password verification of player input in required format</dt>
+                            <dt>Devised with an algorithm for analysing result and display winning amount</dt>
+                    </li>
+                    <li class="project-list">
+                        <span class="project-name">Stone,Paper and Scissor game</span>
+                        <span class="project-year">[2022]</span>
+                            <dt>Created using python</dt>
+                            <dt>Algorithm devised for random output from computer side</dt>
+                    </li>
+                    <li class="project-list">
+                        <span class="project-name">Default Calculator</span>
+                        <dt>Created using python</dt>
+                        <dt>For the default output for particular inputs</dt>
+                    </li>
+                </ul>
+                </div>
+                <div id="etc">
+                <h2>Extra Curricular Skills & Achievements</h2>
+                <ul class="extra">
+                    <li>Selected as the Finalist of Group dance performance in Cultural dance fest of Zeitgeist held at IIT Ropar.
+                    </li>
+                    <br><li>Completed a year-long intensive military and aviation training program in National cadet Corps in 7 Raj 
+                        Air Sqn NCC Kota at RTU</li>
+                    <br><li>Experienced to fly and handle the aircraft named Virus SW 80 Microlight in NCC</li>
+                    <br><li>Attended Annual Training Camp(ATC-2) of NCC from 17 August 2023 to 26 August 2023 held at kota(Rajasthan)
+                    </li>
+                    <br><li>Secured 1st position in Table Tennis in Inter Branch sports competition</li>
+                    <br><li>Secured 2nd position in Chess in Inter Branch sports competition</li>
+                    <br><li>Participated in various sports activities, poster making, dancing, drama, art and crafts, and campaigns in 
+                        the college</li>
+                    <br><li>Volunteered the events like Induction program, Walkathon and some more other events at the Institute level
+                    </li>
+                    <br><li>Actively participated in surveying the village nearby under the social service by the Vivekanand Study Circle
+                         Club of RTU</li>
+                    <br><li>Actively participated in surveying Apna Ghar Ashram kota under the social service by the National Cadet Corps
+                    </li>
+                    </div>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+    </body>
+</html>
