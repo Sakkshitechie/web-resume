@@ -21,9 +21,9 @@ Additionally, the resume includes a section for displaying skills using a line c
 
 <h2>File Structure:</h2>
 <ol>
-<li>index.html`: Main HTML file containing the structure of the resume.</li>
-<li>style.css`: CSS file for styling the resume layout.</li>
-<li>script.js`: JavaScript file for implementing interactive navigation and skills chart functionality.</li>
+<li>index.html: Main HTML file containing the structure of the resume.</li>
+<li>style.css: CSS file for styling the resume layout.</li>
+<li>script.js: JavaScript file for implementing interactive navigation and skills chart functionality.</li>
 </ol>
 
 <h2>Dependencies:</h2>
